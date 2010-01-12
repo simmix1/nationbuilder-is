@@ -184,6 +184,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/new', :controller => 'priorities', :action => 'new'        
   map.connect '/controversial', :controller => 'priorities', :action => 'controversial'
    
+  map.connect '/for_and_against', :controller => 'points', :action => 'for_and_against'
+   
   map.connect '/vote/:action/:code', :controller => "vote"
   map.connect '/splash', :controller => 'splash', :action => 'index'
   map.connect '/issues', :controller => "issues"

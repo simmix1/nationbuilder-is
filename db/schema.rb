@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091014144207) do
+ActiveRecord::Schema.define(:version => 20100112183550) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id"
@@ -724,6 +724,7 @@ ActiveRecord::Schema.define(:version => 20091014144207) do
     t.float    "opposer_score",                          :default => 0.0
     t.float    "neutral_score",                          :default => 0.0
     t.text     "content_html"
+    t.float    "importance_score"
   end
 
   add_index "points", ["other_priority_id"], :name => "index_points_on_other_priority_id"
