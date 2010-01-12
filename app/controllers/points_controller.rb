@@ -26,7 +26,22 @@ class PointsController < ApplicationController
       format.json { render :json => @points.to_json(:include => [:priority, :other_priority], :except => NB_CONFIG['api_exclude_fields']) }
     end
   end  
- 
+
+  def proetcontra
+    @page_title = t('points.proetcontra.title', :government_name => current_government.name)
+    @points_new_up = Point.published.five.up.by_recently_created :include => :priority
+    @points_new_down = Point.published.five.down.by_recently_created :include => :priority
+    @points_top_up = Point.published.five.up.top :include => :priority
+    @points_top_down = Point.published.five.down.top :include => :priority
+    @rss_url = url_for :only_path => false, :format => "rss"
+    respond_to do |format|
+      format.html { render :action => "fororagainst" }
+      #format.rss { render :template => "rss/points" }
+      #format.xml { render :xml => @points.to_xml(:include => [:priority, :other_priority], :except => NB_CONFIG['api_exclude_fields']) }
+      #format.json { render :json => @points.to_json(:include => [:priority, :other_priority], :except => NB_CONFIG['api_exclude_fields']) }
+    end
+  end  
+
   def your_priorities
     @page_title = t('points.your_priorities.title', :government_name => current_government.name)
     if current_user.endorsements_count > 0    
@@ -264,6 +279,7 @@ class PointsController < ApplicationController
         @endorsement = @priority.endorsements.active.find_by_user_id(current_user.id)
       end    
     end  
+    
     def get_qualities
       @qualities = nil
       if logged_in? and @points.any? # pull all their qualities on the points shown

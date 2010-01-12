@@ -1,0 +1,7 @@
+<div id="hp_intro"><%= @page_title %></div>
+<div>
+	  <%= render :partial => "brbox", :locals => {:id => "pro_top", :points => @points_top_up} %>
+	  <%= render :partial => "brbox", :locals => {:id => "con_top", :points => @points_top_down} %>
+	  <%= render :partial => "brbox", :locals => {:id => "pro_new", :points => @points_new_up} %>
+	  <%= render :partial => "brbox", :locals => {:id => "con_new", :points => @points_new_down} %>
+</div>	
