@@ -45,7 +45,8 @@ class User < ActiveRecord::Base
 
   belongs_to :picture
   has_attached_file :buddy_icon, :styles => { :icon_24 => "24x24#", :icon_48 => "48x48#", :icon_96 => "96x96#" }, 
-    :storage => :s3, :s3_credentials => S3_CONFIG, :default_url => "/images/buddy_:style.png",
+    :storage => defined?(S3_CONFIG)=='constant' ? :s3 : :filesystem, :s3_credentials => defined?(S3_CONFIG)=='constant' ? S3_CONFIG : nil, 
+    :default_url => "/images/buddy_:style.png",
     :path => ":class/:attachment/:id/:style.:extension"
   
   validates_attachment_size :buddy_icon, :less_than => 5.megabytes

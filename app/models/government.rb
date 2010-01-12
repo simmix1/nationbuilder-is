@@ -17,7 +17,7 @@ class Government < ActiveRecord::Base
   belongs_to :picture
   
   has_attached_file :logo, :styles => { :icon_96 => "96x96#", :icon_140  => "140x140#", :icon_180 => "180x180#", :medium => "450x" }, 
-    :storage => :s3, :s3_credentials => S3_CONFIG, 
+    :storage => defined?(S3_CONFIG)=='constant' ? :s3 : :filesystem, :s3_credentials => defined?(S3_CONFIG)=='constant' ? S3_CONFIG : nil,
     :path => ":class/:attachment/:id/:style.:extension"
   
   validates_attachment_size :logo, :less_than => 5.megabytes
@@ -25,7 +25,8 @@ class Government < ActiveRecord::Base
     
   belongs_to :buddy_icon_old, :class_name => "Picture"
   has_attached_file :buddy_icon, :styles => { :icon_24 => "24x24#", :icon_48  => "48x48#", :icon_96 => "96x96#" }, 
-    :storage => :s3, :s3_credentials => S3_CONFIG, :default_url => "/images/buddy_:style.png",
+    :storage => defined?(S3_CONFIG)=='constant' ? :s3 : :filesystem, :s3_credentials => defined?(S3_CONFIG)=='constant' ? S3_CONFIG : nil,
+    :default_url => "/images/buddy_:style.png",
     :path => ":class/:attachment/:id/:style.:extension"
     
   validates_attachment_size :buddy_icon, :less_than => 5.megabytes
@@ -33,7 +34,8 @@ class Government < ActiveRecord::Base
       
   belongs_to :fav_icon_old, :class_name => "Picture"
   has_attached_file :fav_icon, :styles => { :icon_16 => "16x16#" }, 
-    :storage => :s3, :s3_credentials => S3_CONFIG, :default_url => "/favicon.png",
+    :storage => defined?(S3_CONFIG)=='constant' ? :s3 : :filesystem, :s3_credentials => defined?(S3_CONFIG)=='constant' ? S3_CONFIG : nil,
+    :default_url => "/favicon.png",
     :path => ":class/:attachment/:id/:style.:extension"
   
   validates_attachment_size :fav_icon, :less_than => 5.megabytes
