@@ -31,6 +31,5 @@ ENV['HOPTOAD_KEY'] = DB_CONFIG[RAILS_ENV]['hoptoad_key']
 ENV['TWITTER_LOGIN'] = DB_CONFIG[RAILS_ENV]['twitter_login']
 ENV['TWITTER_PASSWORD'] = DB_CONFIG[RAILS_ENV]['twitter_password']
 ENV['WEBSOLR_URL'] = DB_CONFIG[RAILS_ENV]['websolr_url']
-
-S3_CONFIG = YAML.load_file("#{RAILS_ROOT}/config/s3.yml")
+S3_CONFIG = YAML.load_file("#{RAILS_ROOT}/config/s3.yml") if File.exists?("#{RAILS_ROOT}/config/s3.yml")
 Paperclip.options[:image_magick_path] = "/opt/local/bin"
