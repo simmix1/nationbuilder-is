@@ -50,7 +50,7 @@ class Tag < ActiveRecord::Base
   end  
   
   def to_url
-    "#{name.gsub(/[^a-z0-9]+/i, '-').downcase[0..60]}"
+    "#{name.parameterize_full[0..60]}"
   end
 
   def to_s

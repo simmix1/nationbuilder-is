@@ -314,7 +314,7 @@ class User < ActiveRecord::Base
   end
   
   def to_param
-    "#{id}-#{login.gsub(/[^a-z0-9]+/i, '-').downcase}"
+    "#{id}-#{login.parameterize_full}"
   end  
   
   cattr_reader :per_page

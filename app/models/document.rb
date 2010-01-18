@@ -36,7 +36,7 @@ class Document < ActiveRecord::Base
   @@per_page = 25
   
   def to_param
-    "#{id}-#{name.gsub(/[^a-z0-9]+/i, '-').downcase}"
+    "#{id}-#{name.parameterize_full}"
   end  
   
   after_destroy :delete_document_quality_activities

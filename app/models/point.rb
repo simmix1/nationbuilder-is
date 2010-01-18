@@ -36,7 +36,7 @@ class Point < ActiveRecord::Base
   @@per_page = 15  
   
   def to_param
-    "#{id}-#{name.gsub(/[^a-z0-9]+/i, '-').downcase}"
+    "#{id}-#{name.parameterize_full}"
   end  
   
   after_destroy :delete_point_quality_activities

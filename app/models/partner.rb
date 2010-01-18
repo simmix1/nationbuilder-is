@@ -91,7 +91,7 @@ class Partner < ActiveRecord::Base
   end  
     
   def to_param
-    "#{id}-#{short_name.gsub(/[^a-z0-9]+/i, '-')}"
+    "#{id}-#{short_name.parameterize_full}"
   end
 
   def do_activate
