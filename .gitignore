@@ -1,4 +1,5 @@
 .DS_Store
+.project
 log/*
 tmp/**/*
 tmp/restart.txt
