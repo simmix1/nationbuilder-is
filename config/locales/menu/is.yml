@@ -1,0 +1,308 @@
+is:
+    menu:
+        logout: "Útskráning"
+        about:
+            name: "Hugmyndaráðuneytið"
+            site: "Um Hugmyndaráðuneytið"
+            faq: "Spurt & Svarað"
+            rules: "Reglur fyrir vefinn"
+            privacy: "Reglur um friðhelgi"
+        admin:
+            name: "Stillingar hugmyndabanka"
+            government:
+                name: "Stillingar"
+                edit: "Upplýsingar um samfélag"
+            graphics: "Myndefni"
+            logo: "Merki"
+            buddy_icon: "Vinamerki"
+            fav_icon: "Vefmerki (favorites icon er lítið lógó sem sést oftast aftan við vefslóð eða aftan við nafn síðunnar á flipanum)"
+            colors: "Litir"
+            pages: "Síður"
+            blurbs: "Útskýringar"
+            branches: "Greinar"
+            emails: "Netföng"
+            apis: "API lyklar"
+        branches:
+            new: "Bæta við grein"
+            current: "Tilbúnar greinar"
+        briefing:
+            name: "Upplýsingastöð"
+            yours: "Þitt"
+            your_priorities: "Þín forgangsmál"
+            all: "Allt"
+            revised: "Yfirfarið"
+            helpful_to: "Gagnlegt til að:"
+            add_point: 
+                name: "Bæta við rökum"
+                title: "Geturðu lagt fram sannfærandi rök með eða á móti þessu forgangsmáli í færri en 500 stöfum"
+            add_document: 
+                name: "Bæta við skjali"
+                title: "Skjöl gera þér kleift að útvíkka hugmyndirnar þínar og vinna með öðrum á svipaðan máta og wiki síður bjóða"
+            recently_revised: "Nýlega yfirfarið"
+            all_points: "Öll rök"
+            all_documents: "Öll skjöl"
+            all_activity: "Öll virkni"
+            research:
+                name: "Leggja til við rannsókn"
+                needed: "Forgangsatriði vantar {{points_name}} eða {{documents_name}}"
+                points_needed: "Forgangsatriði verða að innihalda rök"
+                documents_needed: "Forgangsatriði verða að innihalda skjöl"
+                contributors:
+                    name: "Meðhöfundar"
+                    one: "Hitta meðhöfund"
+                    other: "Hitta meðhöfunda"
+            edit: "Breyta"
+            full_text: "Allur texti"
+            delete: 
+                name: "Eyða"
+                confirm: "Viltu örugglega eyða?"
+            discussions:
+                name: "Umræður"
+                one: "1 umræða"
+                other: "{{count}} umræður"
+            revisions:
+                name: "endurskoðun"
+                one: "1 endurskoðun"
+                other: "{{count}} endurskoðanir"
+            documents:
+                name: "Skrár"
+                one: "1 skrá"
+                other: "{{count}} skrár"
+            priorities:
+                name: "Forgangsatriði"
+                one: "1 forgangsatriði"
+                other: "{{count}} forgangsatriði"
+            points:
+                name: "Rök"
+                one: "1 rök"
+                other: "{{count}} rök"
+        charts:
+            name: "Línurit og tölfræði"
+            active_issues: "Virkasta {{tags_name}}"
+            rising: "Rísandi mál á dagskrá"
+            falling: "Fallandi mál á dagskrá"
+        color_schemes:
+            theme: "Veldu þema"
+            advanced: "Þróaðra valkerfi"
+        contacts:
+            your_network: "Þitt samskiptanet"
+            already_members: "Núverandi meðlimir"
+            not_invited: "Óboðnir"
+            invited: "Boðnir"
+            number:
+                one: "Þú ert með einn tengilið"
+                other: "Þú hefur {{count}} tengiliði"
+        documents:
+            name: "Skjöl"
+        inbox:
+            name: "Innboxið þitt"
+            incoming: "Einkaskilaboð"
+            sent: "Send boð"
+            notifications: "Tilkynningar"
+        network:
+            name: "Samskiptanet"
+            yours: "Samskiptanetið þitt"
+            facebook: "Finndu Facebook vini þína"
+            grow: "Ræktaður samskiptanetið þitt"
+            find: "Finndu fólk sem þú þekkir"
+            invitation: "Sendu boðsbréf"
+            meet: "Kynnast öllum"
+            influential: "Áhrifamikill"
+            talkative: "Spjallgjarn"
+            ambassadors: "Sendiherrar"
+            suspended: "Frestað"
+            probation: "Skilorð"
+            unverified: "Óstaðfestir"
+            admin: "Einungis yfirstjórnendur"
+            deleted: "Eytt"
+            new: "Nýir meðlimir"
+            warnings: "Aðvaranir"
+            twitterers: "Tístarar (Twitter)"
+            partners: "Meðlimir"
+            more: "Meira"
+            import:
+                google: "Sæktu Google tenglaskrána þína"
+                yahoo: "Yahoo"
+                windows: "Windows Live"
+                facebook: "Facebook"
+        news:
+            name: "Fréttir"
+            what: "Hvað er að gerast"
+            discussions: "Umræður"
+            activity: "Öll virkni"
+            all: "Allt"
+            all_activity: "Öll virkni"
+            yours: "Þitt"
+            created: "Þinn forgangur"
+            everyone: "Allir"
+            everything: "Allt"
+            your_priorities: "Þinn forgangur"
+            your_activity: "Þín virkni"
+            network: "Samskiptanet"
+            your_network: "Þitt samskiptanet"
+            followers: "Fylgjendur"
+            your_followers: "Þínir fylgjendur"
+            official_user_activity: "{{official_user_name}} virkni"
+            manda: "S&Y"
+            acquisitions: "Sameining og yfirtökur"
+            voting: "Niðurstöður atkvæðagreiðslu"
+            proposals: "Tillögur"
+        pages:
+            new: "Ný síða"
+            current: "Núverandi síða"
+        partner:
+            name: "Félaga stillingar"
+            become: "Gerast félagi"
+            account: "Félaga aðild"
+            email: "Tölvupóstlisti"
+            logo: "Merki"
+        priorities:
+            name: "Forgangsatriði"
+            consider: "Forgangsatriði til athugunar"
+            quiz: "Forgangskönnun"
+            action: "Aðgerð"
+            add_ad: 
+                name: "Kaupa auglýsingu fyrir þetta forgangsatriði"
+                title: "Verja hluta af {{currency_name}} til að koma þessu forgangsatriði fremst í röðina til íhugunar fyrir alla."
+            add_proposal:
+                name: "Leggja til yfirtöku"
+                title: "Er annað forgangsmál sem ætti að sameina þessu"
+            edit:
+                name: "Breyta þessu forgangsatriði"
+                title: "Breyta þessu forgangsatriði"
+            bury:
+                name: "Fjarlægja úr uppröðun"
+                title: "Fjarlægja þetta forgangsatriði úr þessari uppröðun"
+                confirm: "Þú ert við það að aflista þetta forgangsatriði úr uppröðunarlistanum: {{priority_name}}. Einungis gera það fyrir atriði sem eru óheiðarleg, misbjóðandi eða fáránleg"
+            delete:
+                name: "Eyða þessu forgangsatriði"
+                title: "Eða þessu forgangsatriði varanlega"
+                confirm: "Ertu viss að þú viljir eyða {{priority_name}} varanlega?"
+            successful:
+                name: "Merkja þetta árangursríkt"
+                title: "Merkja þetta forgangsatriði klárað og árangursríkt"
+                confirm: "Þú ert að merkja eftirfarandi forgangsatriði klárað og árangursríkt: {{priority_name}}.  Vinsamlegast sýndu biðlund, það getur tekið smá stund að afgreiða þessa beiðni ef forgangsatriðið hefur fjölda meðmæla"
+            compromised:
+                name: "Merkja að þessu sé ógnað"
+                title: "Merkja þetta klárað en ógnað"
+                confirm: "Þú ert að merkja eftirfarandi forgangsatriði klárað en ógnað: {{priority_name}}.  Vinsamlegast sýndu biðlund, það getur tekið smá stund að afgreiða þessa beiðni ef forgangsatriðið hefur fjölda meðmæla"
+            intheworks:
+                name: "Merkja í vinnslu"
+                title: "Merkja að þetta forgangsatriði sé í vinnslu"
+                confirm: "Þú ert að merkja við þetta forgangsatriði að það sé í vinnslu: {{priority_name}}."
+            failed:
+                name: "Merkja sem mistök"
+                title: "Merkja þetta forgangatriði sem lokið og misheppnað"
+                confirm: "Merkja þetta forgangatriði sem lokið og misheppnað: {{priority_name}}. Vinsamlegast sýnið biðlund, vinnslan gæti tekið eina eða tvær mínútur ef þetta forgangsatriði hefur marga meðmælendur"
+            flag:
+                name: "Merkja til endurskoðunar"
+                title: "Er ástæða til að umsjónarmaður síðunnar myndi líta á þetta forgangsatriði? Einnig skal setja á fréttaveitu ef það er ekki ljóst hvað vandamálið er"
+                confirm: "Þú ert um það bil að merkja þetta forgangsatriði til endurskoðunar hjá umsjónarmanni síðunnar. Ef það er ekki ljóst afhverju þú ert að merkja það, vinsamlegast setjið á fréttaveituna til að það sé hægt að gera viðeigandi ráðstafanir."
+            endorsers:
+                name: "Meðmælendur"
+                one: "1 meðmælandi"
+                other: "{{count}} meðmælendur"
+            opposers:
+                name: "Á móti"
+                one: "1 á móti"
+                other: "{{count}} á móti"
+            undeclareds:
+                name: "Óyfirlýst"
+                one: "1 óyfirlýst"
+                other: "{{count}} óyfirlýst"
+            everyone:
+                name: "Forgangsatriði allra"
+                short: "Allir"
+                overview: "Yfirsýn"
+                top: "Efst"
+                ads: "Auglýsingar"
+                controversial: "Umdeilt"
+                rising: "Rísandi"
+                falling: "Fallandi"
+                new: "Nýtt"
+                random: "Tilviljanakennt"
+                finished: "Lokið"
+            network:
+                name: "Forgangsmál samskiptanetsins þíns"
+                short: "Samskiptanetið þitt"
+            yours: 
+                name: "Þín forgangsatriði"
+                short: "Þín"
+                active: "Virk"
+                top: "Hæst í einkunnagjöf"
+                lowest: "Lægst í einkunnagjöf"
+                ads: "Auglýsingar sem þú hefur keypt"
+                finished: "Lokið"
+                created: "Forgangsatriði sem þú hefur búið til"
+            official:
+                name: "{{official_user_name}} forgangsatriði"
+                agenda_endorsed: "Mælt með"
+                agenda_not: "Ekki á dagskrá"
+                agenda_opposed: "Á móti"
+            branch:
+                name: "{{branch_name}} forgangsatriði"
+        points:
+            name: "Rök"
+        settings:
+            name: "Stillingar"
+            account: "Þinn aðgangur"
+            bio: "Notandaupplýsingar"
+            picture: "Mynd"
+            password: "Breyta lykilorði"
+            emails: "Láta vita með tölvupósti"
+            legislators: "Lagasmiðir/Reglusmiðir"
+        profile:
+            name: "Notendaupplýsingar"
+            following: "Fylgjandi"
+            followers: "Fylgjendur"
+            contact: "Tengiliður"
+            admin: "Kerfisstjóri"
+            edit:
+                name: "Aðgangs stillingar"
+            signups:
+                name: "Tölvupóstfangs stillingar"
+            legislators:
+                name: "Lagasmiðir/Reglusmiðir"
+            impersonate:
+                name: "Skrá inn sem þessi meðlimur"
+                title: "Skrá inn sem þessi meðlimur"
+                confirm: "Ertu viss um að þú viljir skrá þig inn sem  {{user_name}}? Farðu varlega!"
+            suspend:
+                name: "Ljúka aðild þessa meðlims/Setja þennann meðlim á bið"
+                title: "Útiloka þennann meðlim algerlega"
+                confirm: "{{user_name}} mun ekki geta tengst og prófíl viðkomandi verður eytt og þau skilaboð gefin að viðkomandi hafi verið sagt upp. Viðkomandi fær EKKI tilkynningu um þetta í tölvupósti"
+            unsuspend:
+                name: "Endurvekja þennann meðlim"
+                title: "Affrysta þennan meðlim"
+                confirm: "Ef þú endurvekur {{user_name}} verða notendaupplýsingarnar aftur virkar og viðkomandi getur skráð sig inn. Viðkomandi fær EKKI tilkynningu um þetta í tölvupósti þ.a. ef þú vilt láta notandann vita þarftu að hafa samband við viðkomandi."
+            make_admin:
+                name: "Gera að umsjónarmanni"
+                title: "Gera þennan meðlim að umsjónarmanni"
+                confirm: "Ef þú gerir  {{user_name}} að umsjónarmanni mun viðkomandi hafa sömu réttindi og þú og þú getur EKKI afturkallað þessi réttindi."
+            resend_activation:
+                name: "Senda staðfestingarpóst aftur"
+            reset_password:
+                name: "Endurstilla lykilorð"
+        next_steps:
+            intro: "Það eru margir möguleikar í {{government_name}}. Svona byrjarðu:"
+            outro: "Þú getur tekið þátt hvenær sem er og hversu oft sem þú vilt. Við höfum opið allan sólarhringinn."
+            legislators: "Tengdu þín forgangsmál þinginu"
+            branches: "Hvaða hópi áttu mest sameiginlegt með:"
+            people_you_know: "Finndu fólk sem þú þekkir"
+            facebook_friends: "Bjóddu Facebook vinum þínum"
+            invite: "Bjóddu fólki að gerast meðlimir"
+            picture: "Bættu inn mynd af þér"
+            bio: "Bættu við upplýsingum um þig"
+            points: "Skrifaðu rök fyrir forgangsmálin þín"
+            comments: "Tengdust umræðum um þín forgangsmál"
+        widgets:
+            name: "Smáforrit fyrir síðuna þína"
+            priorities: 
+                short: "Forgangsmál"
+                name: "Smáforrit fyrir forgangsmál"
+            points: 
+                short: "Rök"
+                name: "Smáforrit fyrir rök"
+            discussions: 
+                short: "Umræður"
+                name: "Smáforrit fyrir umræður"
